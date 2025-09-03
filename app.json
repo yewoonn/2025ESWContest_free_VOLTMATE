@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Voltmate",
+    "slug": "Voltmate",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.Voltmate",
+      "config": {
+        "googleMapsApiKey": "AIzaSyAJ9tX3V3pZfVN0h3tCoybeypOr3XgKQGg"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.Voltmate",
+      "permissions": [
+        "android.permission.VIBRATE",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAJ9tX3V3pZfVN0h3tCoybeypOr3XgKQGg"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
